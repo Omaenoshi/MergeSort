@@ -1,0 +1,16 @@
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.exe
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.deps.json
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.runtimeconfig.json
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.runtimeconfig.dev.json
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.dll
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\ref\AlgorithmLab4.dll
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\bin\Debug\net5.0\AlgorithmLab4.pdb
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.csproj.AssemblyReference.cache
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.AssemblyInfoInputs.cache
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.AssemblyInfo.cs
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.csproj.CoreCompileInputs.cache
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.dll
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\ref\AlgorithmLab4.dll
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.pdb
+C:\Users\Максим.DESKTOP-NKDFPI1\source\repos\AlgorithmLab4\AlgorithmLab4\obj\Debug\net5.0\AlgorithmLab4.genruntimeconfig.cache
