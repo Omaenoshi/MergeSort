@@ -13,21 +13,24 @@ namespace AlgorithmLab4
             Reader rd = new Reader();
             table = rd.ReadFile("Input.txt");
             //MergeSort(table, 0, table.Length - 1);
-            TrippleMergeSort(table, 0, table.Length - 1);
+            //TrippleMergeSort(table, 0, table.Length - 1);
+
+            NaturalMergeSort sorter = new NaturalMergeSort();
+            result = sorter.Sort(table);
         }
 
-        static void MergeSort(string[][] currentArr, int start, int end)
+        static void MergeSort1(string[][] currentArr, int start, int end)
         {
             if (start >= end) return;
 
             int middle = (start + end) / 2;
 
-            MergeSort(currentArr, start, middle);
-            MergeSort(currentArr, middle + 1, end);
-            Merge(currentArr, start, middle, end);
+            MergeSort1(currentArr, start, middle);
+            MergeSort1(currentArr, middle + 1, end);
+            Merge1(currentArr, start, middle, end);
         }
 
-        static void Merge(string[][] currentArr, int start, int middle, int end)
+        static void Merge1(string[][] currentArr, int start, int middle, int end)
         {
             int n1 = middle - start + 1;
             int n2 = end - middle;
@@ -162,55 +165,34 @@ namespace AlgorithmLab4
             result = currentArr;
         }
 
-        static void Natural(string[][] sequence)     //Естественное слияние
+        static void NaturalMergeSort(string[][] currentArr)     //Естественное слияние
         {
-            if (sequence.Length < 0)
-                return;
-            int start = 0;
-            int stop1 = getNextStop(start, sequence);
-            int stop2;
-            for (; stop1 < sequence.Length; stop1++)
-            {
-                stop2 = getNextStop(stop1 + 1, sequence);
-                MergeForNatural(sequence, start, stop1, stop2);
-                stop1 = stop2;
-            }
-        }
+            int length = currentArr.Length;
 
-        static void MergeForNatural(string[][] sequence, int start, int stop1, int stop2)
-        {
-            string[][] temp = new string[stop1][];
-            string[][] tem = new string[stop2][];
-            int i = 0;
-            for (int k = start; k < stop1; k++)
-                temp[i] = sequence[k];
-            i = start;
-            int j = stop1 + 1;
-            for (int k = start; k <= stop2; k++)
+            string[][] tmp = new string[length][];
+            int[] starts = new int[length + 1];
+
+            int runCount = 0;
+            starts[0] = 0;
+            for(var i = 1; i <= length; i++)
             {
-                if (i > stop1)
-                    break;
-                else if (j > stop2)
+                if (i == length || int.Parse(currentArr[i][4]) < int.Parse(currentArr[i - 1][4]))
+                    starts[++runCount] = i;
+            }
+
+            string[][] from = currentArr;
+            string[][] to = tmp;
+
+            while(runCount > 1)
+            {
+                int newRunCount = 0;
+                for (var i = 0; i < runCount - 1; i +=2)
                 {
-                    sequence[k] = temp[i];
-                    i++;
+                    
                 }
-                else if (temp.Length != 0 && int.Parse(temp[i][4]) > int.Parse(sequence[j][4]))
-                {
-                    sequence[k] = sequence[j];
-                    j++;
-                }
-                else if (temp.Length != 0)
-                {
-                    sequence[k] = temp[i];
-                    i++;
-                }
-                if ( i == tem.Length)
-                    tem[i-1] = sequence[k];
-                else
-                    tem[i] = sequence[k];
             }
         }
+        
 
         static int getNextStop(int i, string[][] sequence)
         {
@@ -220,6 +202,8 @@ namespace AlgorithmLab4
                 i++;
             return i;
         }
+
+
 
     }
 }
