@@ -1,8 +1,9 @@
 ﻿namespace AlgorithmLab4
 {
-    internal class MergeSort
+    internal class MergeSort : Sorter
     {
-        public string[][] Sort(string[][] elements)
+        readonly int AttributeId = 4;
+        public override string[][] Sort(string[][] elements)
         {
             int length = elements.Length;
             return MergeSortMethod(elements, 0, length - 1);
@@ -34,7 +35,7 @@
                 string[] leftValue = leftArray[leftPos];
                 string[] rightValue = rightArray[rightPos];
 
-                if(int.Parse(leftValue[4]) <= int.Parse(rightValue[4]))
+                if(int.Parse(leftValue[AttributeId]) <= int.Parse(rightValue[AttributeId]))
                 {
                     target[targetPos++] = leftValue;
                     leftPos++;

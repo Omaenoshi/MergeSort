@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace AlgorithmLab4
 {
-    internal class NaturalMergeSort
+    internal class NaturalMergeSort : Sorter
     {
-        public string[][] Sort(string[][] elements)
+        readonly int AttributeId = 4;
+
+        public override string[][] Sort(string[][] elements)
         {
             int length = elements.Length;
 
@@ -19,7 +21,7 @@ namespace AlgorithmLab4
             starts[0] = 0;
             for (var i = 1; i <= length; i++)
             {
-                if (i == length || int.Parse(elements[i][4]) < int.Parse(elements[i - 1][4]))
+                if (i == length || int.Parse(elements[i][AttributeId]) < int.Parse(elements[i - 1][AttributeId]))
                     starts[++runCount] = i;
             }
 
@@ -68,7 +70,7 @@ namespace AlgorithmLab4
             {
                 string[] leftValue = source[leftPos];
                 string[] rightValue = source[rightPos];
-                if (int.Parse(leftValue[4]) <= int.Parse(rightValue[4]))
+                if (int.Parse(leftValue[AttributeId]) <= int.Parse(rightValue[AttributeId]))
                 {
                     target[targetPos++] = leftValue;
                     leftPos++;
