@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Максим.DESKTOP-NKDFPI1\\.nuget\\packages\\": {}
+    "C:\\Users\\rassv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Максим.DESKTOP-NKDFPI1\\source\\repos\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
+      "projectUniqueName": "C:\\Users\\rassv\\Documents\\GitHub\\MergeSort\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
       "projectName": "AlgorithmLab4",
-      "projectPath": "C:\\Users\\Максим.DESKTOP-NKDFPI1\\source\\repos\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
-      "packagesPath": "C:\\Users\\Максим.DESKTOP-NKDFPI1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Максим.DESKTOP-NKDFPI1\\source\\repos\\AlgorithmLab4\\AlgorithmLab4\\obj\\",
+      "projectPath": "C:\\Users\\rassv\\Documents\\GitHub\\MergeSort\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
+      "packagesPath": "C:\\Users\\rassv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rassv\\Documents\\GitHub\\MergeSort\\AlgorithmLab4\\AlgorithmLab4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Максим.DESKTOP-NKDFPI1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rassv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,6 +55,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8sAaej5LpVaYgvsx+W+EH6W9WIwuaS+9Y+GtQCR97zADZl3285vDZNC9T7QsAeA64W05cdb+jMdBTWJoeEkybQ==",
+  "dgSpecHash": "Xm43+utT0G10jk+rOz74+BunK8bx50gg6dD+UXwdJ1qnQxwOrSj6YmHP+PV/WiipAO8Y19uotTbkI25lq0SW4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Максим.DESKTOP-NKDFPI1\\source\\repos\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rassv\\Documents\\GitHub\\MergeSort\\AlgorithmLab4\\AlgorithmLab4\\AlgorithmLab4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rassv\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
