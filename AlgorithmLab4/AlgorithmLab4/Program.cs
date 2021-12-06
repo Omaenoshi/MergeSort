@@ -1,25 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace AlgorithmLab4
 {
-    internal class Program
+    internal static class Program
     {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         static string[][] result;
-        
+
+        private static readonly Dictionary<int, string> SortsName = new()
+            {{1, "MergeSort"}, {2, "NaturalMergeSort"}, {3, "TripleMergeSort"}};
+
         static void Main(string[] args)
         {
-            string[][] table;
-            Reader rd = new Reader();
-            table = rd.ReadFile("Input.txt");
-            Writer wr = new Writer();
-            Tuple<string, string> answers = wr.Ask();
-            var removedTable = Remove(table, answers.Item2);
-            Console.Clear();
-            PrintTable("Было:", table);
-            Sorter sorter = ChooseSort(answers.Item1);
-            result = sorter.Sort(removedTable);
-            PrintTable("Стало:", result);
+            var fileLength = File.ReadLines("../../../Input.txt").Count();
+            Console.WriteLine("Выберете метод сортировки:");
+            foreach (var el in SortsName)
+            {
+                Console.WriteLine($"{el.Key} - {el.Value}");
+            }
+
+            var SortId = int.Parse((Console.ReadLine() ?? null) ?? throw new Exception("Uncorrectly input"));
+            var sorter = ChooseSort(SortId);
+            
         }
 
         static string[][] Remove(string[][] table, string attributeKey)
@@ -47,19 +51,15 @@ namespace AlgorithmLab4
             }
         }
 
-        static Sorter ChooseSort(string str)
+        static object ChooseSort(int str)
         {
-            switch(str)
+            return str switch
             {
-                case "1":
-                    return new MergeSort();
-                case "2":
-                    return new NaturalMergeSort();
-                case "3":
-                    return new TripleMergeSort();
-                default:
-                    throw new Exception("ERROR");
-            }
+                1 => new MergeSort(),
+                2 => new NaturalMergeSort(),
+                3 => new TripleMergeSort(),
+                _ => throw new Exception("ERROR")
+            };
         }
     }
 }

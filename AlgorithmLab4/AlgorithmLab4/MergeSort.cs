@@ -1,39 +1,88 @@
-﻿namespace AlgorithmLab4
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Net;
+
+namespace AlgorithmLab4
 {
-    internal class MergeSort : Sorter
+    internal class MergeSort
     {
         readonly int AttributeId = 4;
-        public override string[][] Sort(string[][] elements)
+        private int currentFileSize;
+        private string currentFileAdress;
+        
+        public void Sort(string fileName, int fileSize)
         {
-            int length = elements.Length;
-            return MergeSortMethod(elements, 0, length - 1);
+            currentFileSize = fileSize;
+            currentFileAdress = fileName;
+            MergeSortMethod(0, fileSize);
         }
 
-        private string[][] MergeSortMethod(string[][] elements, int left, int right)
+        private void MergeSortMethod(int left, int right)
         {
-            if (left == right) return new string[][] { elements[left]};
+            if (left == right) return;
 
             int middle = left + (right - left) / 2;
-            string[][] leftArray = MergeSortMethod(elements, left, middle);
-            string[][] rightArray = MergeSortMethod(elements, middle + 1, right);
 
-            return Merge(leftArray, rightArray);
+            string leftArray = WriteInFile("../../../B.txt", left, middle);
+            string rightArray = WriteInFile("../../../C.txt", middle, right);
+            Merge(leftArray, rightArray);
+        }
+        
+        private string WriteInFile(string fileTo, int start, int end)
+        {
+            var sr = new StreamReader(currentFileAdress);
+            var sw = new StreamWriter(fileTo);
+            for (var i = 0; i < currentFileSize; i++)
+            {
+                var line = sr.ReadLine();
+
+                if (i >= start && i < end)
+                {
+                    sw.WriteLine(line);
+                }
+            }
+            sw.Close();
+
+            return fileTo;
         }
 
-        private string[][] Merge(string[][] leftArray, string[][] rightArray)
+        private string[] ReadOutFile(string fileFrom, int index)
         {
-            int leftLen = leftArray.Length;
-            int rightLen = rightArray.Length;
+            var sr = new StreamReader(fileFrom);
+            var size = File.ReadLines(fileFrom).Count();
+            for (var i = 0; i < size; i++)
+            {
+                var line = sr.ReadLine();
 
-            string[][] target = new string[leftLen + rightLen][];
-            int targetPos = 0;
-            int leftPos = 0;
-            int rightPos = 0;
+                if (i == index)
+                {
+                    return line.Split();
+                }
+            }
+            sr.Close();
+
+            return ReadOutFile(fileFrom, index);
+        }
+
+        private string[][] Merge(string leftArray, string rightArray)
+        {
+            var leftLen = File.ReadLines(leftArray).Count();
+            var rightLen = File.ReadLines(rightArray).Count();
+
+            var target = new string[leftLen + rightLen][];
+            var targetPos = 0;
+            var leftPos = 0;
+            var rightPos = 0;
 
             while(leftPos < leftLen && rightPos < rightLen)
             {
-                string[] leftValue = leftArray[leftPos];
-                string[] rightValue = rightArray[rightPos];
+                StreamReader sr = new StreamReader(leftArray);
+                string[] leftValue = sr.ReadLine().Split();
+                sr.Close();
+                StreamReader sr1 = new StreamReader(rightArray);
+                string[] rightValue = sr.ReadLine().Split();
+                sr.Close();
 
                 if(int.Parse(leftValue[AttributeId]) <= int.Parse(rightValue[AttributeId]))
                 {
@@ -49,11 +98,13 @@
 
             while (leftPos < leftLen)
             {
-                target[targetPos++] = leftArray[leftPos++];
+                target[targetPos++] = ReadOutFile(leftArray, leftPos);
+                leftPos++;
             }
             while (rightPos < rightLen)
             {
-                target[targetPos++] = rightArray[rightPos++];
+                target[targetPos++] = ReadOutFile(rightArray, rightPos);
+                rightPos++;
             }
 
             return target;

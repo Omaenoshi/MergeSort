@@ -8,6 +8,6 @@ namespace AlgorithmLab4
 {
     internal abstract class Sorter
     {
-        public abstract string[][] Sort(string[][] elements);
+        public abstract string[][] Sort1(string[][] elements);
     }
 }

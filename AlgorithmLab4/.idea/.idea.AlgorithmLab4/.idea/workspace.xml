@@ -4,7 +4,27 @@
     <projectFile>AlgorithmLab4/AlgorithmLab4.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c46864c-49e9-4607-82ad-118ae5b3f443" name="Changes" comment="" />
+    <list default="true" id="1c46864c-49e9-4607-82ad-118ae5b3f443" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlgorithmLab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlgorithmLab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/MergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/MergeSort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/NaturalMergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/NaturalMergeSort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Reader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Sorter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/Sorter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/TripleMergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/TripleMergeSort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Writer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/ref/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/ref/AlgorithmLab4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/ref/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/ref/AlgorithmLab4.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +40,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35005066" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -55,6 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1638713630050</updated>
       <workItem from="1638713635086" duration="105000" />
+      <workItem from="1638713881061" duration="7862000" />
+      <workItem from="1638805556165" duration="6293000" />
     </task>
     <servers />
   </component>
@@ -62,18 +86,31 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

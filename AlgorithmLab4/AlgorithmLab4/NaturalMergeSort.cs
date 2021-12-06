@@ -9,8 +9,8 @@ namespace AlgorithmLab4
     internal class NaturalMergeSort : Sorter
     {
         readonly int AttributeId = 4;
-
-        public override string[][] Sort(string[][] elements)
+        
+        public override string[][] Sort1(string[][] elements)
         {
             int length = elements.Length;
 
