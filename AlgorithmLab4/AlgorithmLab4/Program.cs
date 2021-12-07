@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace AlgorithmLab4
 {
     internal static class Program
-    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-        static string[][] result;
-
+    {
         private static readonly Dictionary<int, string> SortsName = new()
             {{1, "MergeSort"}, {2, "NaturalMergeSort"}, {3, "TripleMergeSort"}};
 
@@ -23,7 +22,11 @@ namespace AlgorithmLab4
 
             var SortId = int.Parse((Console.ReadLine() ?? null) ?? throw new Exception("Uncorrectly input"));
             var sorter = ChooseSort(SortId);
-            
+            Console.WriteLine("Выберете по какому ключу сортировать");
+            var answer = Console.ReadLine();
+            PrintTable("Было:", ReadAndSplitTable("../../../Input.txt"));
+            var res = Remove(ReadAndSplitTable("../../../Input.txt"), answer);
+            PrintTable("Стало:", sorter.Sort(res));
         }
 
         static string[][] Remove(string[][] table, string attributeKey)
@@ -51,7 +54,7 @@ namespace AlgorithmLab4
             }
         }
 
-        static object ChooseSort(int str)
+        static Sorter ChooseSort(int str)
         {
             return str switch
             {
@@ -60,6 +63,19 @@ namespace AlgorithmLab4
                 3 => new TripleMergeSort(),
                 _ => throw new Exception("ERROR")
             };
+        }
+
+        private static string[][] ReadAndSplitTable(string path)
+        {
+            var table = File.ReadAllLines(path);
+            var result = new string[table.Length][];
+
+            for (var i = 0; i < table.Length; i++)
+            {
+                result[i] = table[i].Split();
+            }
+
+            return result;
         }
     }
 }

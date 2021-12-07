@@ -9,7 +9,7 @@ namespace AlgorithmLab4
     internal class TripleMergeSort : Sorter
     {
         readonly int AttributeId = 4;
-        public override string[][] Sort1(string[][] elements)
+        public override string[][] Sort(string[][] elements)
         {
             int length = elements.Length;
             return MergeSortMethod(elements, 0, length - 1);

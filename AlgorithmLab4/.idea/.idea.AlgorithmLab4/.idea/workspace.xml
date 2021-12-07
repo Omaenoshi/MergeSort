@@ -9,19 +9,12 @@
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/MergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/MergeSort.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/NaturalMergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/NaturalMergeSort.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Reader.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Sorter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/Sorter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/TripleMergeSort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/TripleMergeSort.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/Writer.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/AlgorithmLab4.runtimeconfig.dev.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/ref/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/bin/Debug/net5.0/ref/AlgorithmLab4.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/AlgorithmLab4.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/ref/AlgorithmLab4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmLab4/obj/Debug/net5.0/ref/AlgorithmLab4.dll" afterDir="false" />
     </list>
@@ -31,6 +24,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="21ryiTVo3rPD8D1KyAN1oXuF8Dc" />
@@ -78,7 +76,8 @@
       <updated>1638713630050</updated>
       <workItem from="1638713635086" duration="105000" />
       <workItem from="1638713881061" duration="7862000" />
-      <workItem from="1638805556165" duration="6293000" />
+      <workItem from="1638805556165" duration="6506000" />
+      <workItem from="1638855504510" duration="3323000" />
     </task>
     <servers />
   </component>
@@ -99,7 +98,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="govno" />
                       </list>
                     </value>
                   </entry>

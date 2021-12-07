@@ -5,7 +5,7 @@ using System.Net;
 
 namespace AlgorithmLab4
 {
-    internal class MergeSort
+    internal class MergeSort : Sorter
     {
         readonly int AttributeId = 4;
         private int currentFileSize;
@@ -108,6 +108,69 @@ namespace AlgorithmLab4
             }
 
             return target;
+        }
+        
+        
+        private string[][] MergeSortMethod(string[][] elements, int left, int right)
+        {
+            if (left == right) return new string[][] {elements[left]};
+
+            int middle = left + (right - left) / 2;
+
+            string[][] leftArray = MergeSortMethod(elements, left, middle);
+            string[][] rightArray = MergeSortMethod(elements, middle + 1, right);
+            return Merge(leftArray, rightArray);
+        }
+        
+        private string[][] Merge(string[][] leftArray, string[][] rightArray)
+        {
+            var leftLen = leftArray.Length;
+            var rightLen = rightArray.Length;
+
+            var target = new string[leftLen + rightLen][];
+            var targetPos = 0;
+            var leftPos = 0;
+            var rightPos = 0;
+
+            while(leftPos < leftLen && rightPos < rightLen)
+            {
+                string[] leftValue = leftArray[leftPos];
+                Console.WriteLine("Записываем значение из 1-й половины файла А в файл В");
+                string[] rightValue = rightArray[rightPos];
+                Console.WriteLine("Записываем значение из 2-й половины файла А в файл С");
+                
+                if(int.Parse(leftValue[AttributeId]) <= int.Parse(rightValue[AttributeId]))
+                {
+                    target[targetPos++] = leftValue;
+                    leftPos++;
+                    Console.WriteLine("Сравниваем");
+                }
+                else
+                {
+                    target[targetPos++] = rightValue;
+                    rightPos++;
+                    Console.WriteLine("Сравниваем");
+                }
+            }
+
+            while (leftPos < leftLen)
+            {
+                target[targetPos++] = leftArray[leftPos++];
+                Console.WriteLine("Оставшиеся элементы из В скидываем в А");
+            }
+            while (rightPos < rightLen)
+            {
+                target[targetPos++] = rightArray[rightPos++];
+                Console.WriteLine("Оставшиеся элементы из С скидываем в А");
+            }
+
+            return target;
+        }
+        
+        public override string[][] Sort(string[][] elements)
+        {
+            var length = elements.Length;
+            return MergeSortMethod(elements, 0, length - 1);
         }
     }
 }
